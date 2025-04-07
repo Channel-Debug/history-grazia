@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="w-full md:w-1/3 flex justify-center order-2 md:order-1">
             <div className="rounded-lg overflow-hidden border-4 border-deledda-sand shadow-lg transform rotate-2 transition-transform hover:rotate-0 duration-300">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Grazia_Deledda_1926.jpg/800px-Grazia_Deledda_1926.jpg" 
+                src="https://www.storicang.it/nt/system/a/14732/grazia-deledda.jpg" 
                 alt="Grazia Deledda" 
                 className="w-full h-auto object-cover"
               />

@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for Grazia Deledda website
+				deledda: {
+					'terracotta': '#c8693a',
+					'olive': '#5f6c3b',
+					'sand': '#e3d5c2',
+					'dark': '#382f2d',
+					'cream': '#f5f0e8'
 				}
 			},
 			borderRadius: {
@@ -89,6 +98,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'serif': ['Playfair Display', 'serif'],
+				'sans': ['Lato', 'sans-serif']
 			}
 		}
 	},

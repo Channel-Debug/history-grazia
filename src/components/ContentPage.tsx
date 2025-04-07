@@ -1,8 +1,7 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
-import { Textarea } from '@/components/ui/textarea';
 
 interface ContentPageProps {
   title: string;
@@ -10,7 +9,6 @@ interface ContentPageProps {
 }
 
 const ContentPage: React.FC<ContentPageProps> = ({ title, initialContent = '' }) => {
-  const [content, setContent] = useState(initialContent);
   const navigate = useNavigate();
 
   return (
@@ -30,13 +28,14 @@ const ContentPage: React.FC<ContentPageProps> = ({ title, initialContent = '' })
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-deledda-dark">{title}</h1>
         
-        <div className="max-w-4xl mx-auto">
-          <Textarea
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            placeholder="Inserisci il contenuto qui..."
-            className="min-h-[400px] p-4 text-lg border-deledda-sand focus:border-deledda-olive"
-          />
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <div className="p-6 bg-white rounded-lg shadow-sm border border-deledda-sand">
+            {initialContent ? (
+              <div dangerouslySetInnerHTML={{ __html: initialContent }} />
+            ) : (
+              <p className="text-gray-500 italic">Contenuto non ancora disponibile...</p>
+            )}
+          </div>
         </div>
       </main>
       

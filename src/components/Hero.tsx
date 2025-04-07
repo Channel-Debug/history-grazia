@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="w-full md:w-1/3 flex justify-center order-2 md:order-1">
             <div className="rounded-lg overflow-hidden border-4 border-deledda-sand shadow-lg transform rotate-2 transition-transform hover:rotate-0 duration-300">
               <img 
-                src="https://www.storicang.it/nt/system/a/14732/grazia-deledda.jpg" 
+                src="https://content.storicang.it/medio/2020/03/05/se-io-conto-qualcosa-nella-letteratura-italiana-lo-devo-tutto-alla-mia-isola-santa-scrisse-grazia-deledda_c1b126ba_800x1032.jpg" 
                 alt="Grazia Deledda" 
                 className="w-full h-auto object-cover"
               />
